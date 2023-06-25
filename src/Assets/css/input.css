@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  background: #ece7e1;
+}
+
+input, textarea {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .writing {
+    writing-mode: vertical-rl;
+  }
+}
+
+
+@keyframes moves {
+
+  0% {
+      opacity: .5;
+      transform: scale(0.8);
+  }
+  
+}
+
+
+.project1{
+  background-color: black;
+  transition: transform 2s ease-in-out;
+  animation: moves 3s ease-in-out 1s infinite normal;
+}
+
+.left {
+  animation: slide-in-left 2s ease-out 0.5s forwards normal;
+  opacity: 0;
+}
+
+@keyframes slide-in-left {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    25% {
+      transform: translateX(70%);
+      opacity: 0.25;
+    }
+
+    50% {
+      transform: translateX(50%);
+      opacity: 0.5;
+    }
+  
+
+    75% {
+      transform: translateX(25%);
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+  
+  
+}
