@@ -72,3 +72,41 @@ input, textarea {
   
   
 }
+
+
+
+.hello {
+  animation: slide-in-left 2s ease-out 0.5s forwards normal;
+  opacity: 0;
+}
+
+@keyframes slide-in-left {
+  0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+
+    25% {
+      transform: translateY(30%);
+      opacity: 0.25;
+    }
+
+    50% {
+      transform: translateY(20%);
+      opacity: 0.5;
+    }
+  
+
+    75% {
+      transform: translateY(10%);
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+  
+  
+}
