@@ -84,7 +84,7 @@ input, textarea {
   0% {
       transform: translateY(100%);
       opacity: 0;
-    }
+    } 
 
     25% {
       transform: translateX(75%);
