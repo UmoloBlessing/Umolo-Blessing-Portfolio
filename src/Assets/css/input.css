@@ -109,3 +109,24 @@ input, textarea {
   
 }
 
+@media only screen and (min-width: 1024px) {
+
+  .item {
+    height: 400px;
+  }
+
+
+  .project {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px;
+  }
+
+
+  .project1 {
+    height: 300px;
+    width: 600px;
+  }
+
+
+}
