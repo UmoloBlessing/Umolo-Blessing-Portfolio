@@ -6,15 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     
     links.forEach(link => {
       link.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); 
         showLoadingAnimation();
 
-        const href = link.getAttribute('href'); // Get the href attribute of the clicked link
+        const href = link.getAttribute('href'); 
 
-        // Simulate a delay before navigating to the clicked link
         setTimeout(function () {
           window.location.href = href;
-        }, 1000); // Adjust the delay time as needed
+        }, 1000); 
       });
     });
 
