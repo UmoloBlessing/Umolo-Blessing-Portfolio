@@ -1,5 +1,3 @@
-const welcome = alert ('Welcome to Umolo Blessing Johnson Postfolio. Feel Fre to check and contact him. Thank you!!!!!.')
-
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('a'); 
     const loadingContainer = document.getElementById('loadingContainer');
